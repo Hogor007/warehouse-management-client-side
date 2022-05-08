@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
-import bar from "../Shared/Progress/Progress";
+
 
 const ProductDetail = () => {
   const { productId } = useParams();
@@ -13,7 +13,6 @@ const ProductDetail = () => {
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, [productId]);
-  bar();
   const confirmDeliver = () => {
     Swal.fire({
       title: "Are you sure its deliverd?",

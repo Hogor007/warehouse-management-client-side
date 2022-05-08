@@ -3,12 +3,12 @@ import Product from "../../components/Shared/Product/Product";
 import useProducts from "../../hooks/useProducts";
 import Loader from "../../components/Shared/Loader/Loader";
 import { Link } from "react-router-dom";
-import bar from "../../components/Shared/Progress/Progress";
+
 import Swal from "sweetalert2";
 
 const AllProducts = () => {
   const [products, setProducts] = useProducts();
-  bar();
+  ;
   const handleDelete = (id) => {
     Swal.fire({
       title: "Are you sure to delete this?",

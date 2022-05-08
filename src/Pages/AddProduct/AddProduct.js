@@ -1,11 +1,11 @@
 import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import Swal from "sweetalert2";
-import bar from "../../components/Shared/Progress/Progress";
+
 import auth from "../../firebase.init";
 import { useForm } from "react-hook-form";
 const AddProduct = () => {
-  bar();
+  ;
   const [user] = useAuthState(auth);
   const { email } = user;
   const { register, handleSubmit, reset } = useForm();

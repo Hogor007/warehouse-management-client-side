@@ -5,14 +5,14 @@ import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import Loader from "../../components/Shared/Loader/Loader";
 import MyProduct from "../../components/Shared/MyProduct/MyProduct";
-import bar from "../../components/Shared/Progress/Progress";
+
 import auth from "../../firebase.init";
 
 const MyProducts = () => {
   const [products, setProducts] = useState([]);
   const [user] = useAuthState(auth);
   const navigate = useNavigate();
-  bar();
+  ;
   useEffect(() => {
     async function getProducts() {
       const url = `https://https://damp-wildwood-80771.herokuapp.com/productlist?email=${user.email}`;

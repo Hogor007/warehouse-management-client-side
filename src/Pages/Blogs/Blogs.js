@@ -1,14 +1,14 @@
 import React from "react";
 import "flowbite";
-import bar from "../../components/Shared/Progress/Progress";
+
 
 const Blogs = () => {
-  bar();
+  ;
   return (
     <div className="bg-realBlack">
       <h1 className="text-center text-4xl py-6 font-serif text-white">
         {" "}
-        Blogs Section{" "}
+        QNA Section{" "}
       </h1>
       <hr className="w-2/3 md:w-1/2 mx-auto border-white" />
       <div
